@@ -9,11 +9,16 @@
 // ALTRIMENTI SE utente === computer controllo
 // se è vero stampo PAREGGIO
 // altrimenti HAI PERSO
-
-let user;
-let computer;
-const authorized = [computer, user];
+let computer = 0
+let user = 0
+let player = [computer, user];
 let dadoN = 0;
 
-dadoN = Math.floor(Math.random() * 6 + 1);
-console.log("numero dado", dadoN)
+// for (let i = 0; i < player.length; i++) {
+
+//     dadoN = Math.floor(Math.random() * 6 + 1);
+//     player[i] = dadoN;
+//     console.log(player[i])
+// }
+// console.log("numero user", user);
+// console.log("computer dado", computer);
