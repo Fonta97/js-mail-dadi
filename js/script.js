@@ -8,10 +8,18 @@
 // ALTRIMENTI stampo messaggio negazione accesso
 
 
-const mail = prompt("Inserisci e-mail:")
-console.log("utente prompt email", mail);
+const mail = prompt("Inserisci e-mail:");
 
-if
+const authorized = ["aldo@gmail.com", "mario@yahoo.com", "trucebaldazzi@libero.it"];
 
+for (let i = 0; i < authorized.length; i++) {
 
-document.getElementById("esito").innerHTML = "Puoi accedere";
+    let mailcontrol = authorized[i];
+
+    if (mail === mailcontrol) {
+
+        document.getElementById("esito").innerHTML = "Puoi accedere";
+
+    }
+}
+document.getElementById("esito").innerHTML = "Controlla che la mail sia scritta correttamente birichino";
