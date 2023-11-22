@@ -16,4 +16,4 @@ const authorized = [computer, user];
 let dadoN = 0;
 
 dadoN = Math.floor(Math.random() * 6 + 1);
-console.log
+console.log("numero dado", dadoN)
