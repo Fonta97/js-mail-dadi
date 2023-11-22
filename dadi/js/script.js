@@ -9,10 +9,11 @@
 // ALTRIMENTI SE utente === computer controllo
 // se è vero stampo PAREGGIO
 // altrimenti HAI PERSO
-let computer = 0
-let user = 0
-let player = [computer, user];
-let dadoN = 0;
+
+// let computer = 0
+// let user = 0
+// let player = [computer, user];
+// let dadoN = 0;
 
 // for (let i = 0; i < player.length; i++) {
 
@@ -22,3 +23,16 @@ let dadoN = 0;
 // }
 // console.log("numero user", user);
 // console.log("computer dado", computer);
+
+let computer = Math.floor(Math.random() * 6 + 1);
+let user = Math.floor(Math.random() * 6 + 1);
+
+console.log("numero user", user, "computer dado", computer);
+
+if (computer > user) {
+    document.getElementById("who_wins").innerHTML = "Hai perso";
+} else if (computer === user) {
+    document.getElementById("who_wins").innerHTML = "Pareggio";
+} else {
+    document.getElementById("who_wins").innerHTML = "Hai vinto!";
+}
